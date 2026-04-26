@@ -30,7 +30,7 @@ export default function RootLayout({
         {children}
 
         {/* ✅ OneTag Script */}
-        <Script id="onetag" strategy="afterInteractive">
+        <Script id="onetag-1" strategy="afterInteractive">
           {`
             (function(s){
               s.dataset.zone='10928791';
@@ -44,13 +44,28 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* ✅ Second Ad Script */}
+        {/* ✅ Second Script */}
         <Script
           src="https://quge5.com/88/tag.min.js"
           strategy="afterInteractive"
           data-zone="233784"
           data-cfasync="false"
         />
+
+        {/* ✅ NEW Vignette Script */}
+        <Script id="onetag-vignette" strategy="afterInteractive">
+          {`
+            (function(s){
+              s.dataset.zone='10928815';
+              s.src='https://n6wxm.com/vignette.min.js';
+            })(
+              [document.documentElement, document.body]
+                .filter(Boolean)
+                .pop()
+                .appendChild(document.createElement('script'))
+            );
+          `}
+        </Script>
       </body>
     </html>
   );
