@@ -15,7 +15,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+
+      <body>{children}
+
+        <script>
+  atOptions = {
+    'key' : '74f55211bc95410d3dda39ea97e90829',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/74f55211bc95410d3dda39ea97e90829/invoke.js"></script>
+
+      </body>
     </html>
   )
 }
