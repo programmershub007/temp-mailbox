@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head><script src="https://quge5.com/88/tag.min.js" data-zone="233784" async data-cfasync="false"></script></head>
       <body>{children}</body>
     </html>
   )
